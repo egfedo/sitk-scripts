@@ -16,13 +16,6 @@ iptables -P FORWARD ACCEPT
 iptables -P OUTPUT ACCEPT
 
 # Инициализация vlan
-echo "auto vlan2222" >> /etc/network/interfaces
-echo "iface enp0s3 inet static" >> /etc/network/interfaces
-echo "address 12.43.15.19" >> /etc/network/interfaces
-echo "netmask 255.255.192.0" >> /etc/network/interfaces
-echo "vlan-raw-device enp0s3" >> /etc/network/interfaces
-
-# Инициализация vlan
 rm /etc/netplan/60-config.yaml
 touch /etc/netplan/60-config.yaml
 echo "network:" >> /etc/netplan/60-config.yaml
