@@ -29,9 +29,11 @@ echo "  vlans:" >> /etc/netplan/60-config.yaml
 echo "    vlan201:" >> /etc/netplan/60-config.yaml
 echo "      id: 201" >> /etc/netplan/60-config.yaml
 echo "      link: enp0s8" >> /etc/netplan/60-config.yaml
-echo "      addresses: [220.230.4.8/17]" >> /etc/netplan/60-config.yaml
+echo "      addresses: [220.230.120.18/17]" >> /etc/netplan/60-config.yaml
 
 # Перезагрузка системы
 echo "Rebooting"
 sleep 1
 reboot
+
+
